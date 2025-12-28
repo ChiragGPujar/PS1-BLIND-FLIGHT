@@ -15,13 +15,17 @@ Instructions to Reproduce Results:
    pip install protobuf==3.20.3
    pip install tensorflow==2.12.0
 
-3) Run Training:
+3) Run the baseline test to ensure the working of the baseline model and dataset understanding. We can also directlty go to the
+   actual test but we do this to ensure any errors in reading and baseline test of the dataset.
+   
+4) Run the actual test file
+   Training:
    Execute training notebook/script:
      Extracts tiles
      Trains CNN tile classifier
      Saves model as: /kaggle/working/tile_cnn.h5
 
-4) Run
+5) Run
    Execute inference notebook/script:
    This performs:
      CNN-based tile perception (batched, fast)
@@ -29,4 +33,4 @@ Instructions to Reproduce Results:
      Cost-aware A* path planning
      Robust fallback system to avoid crashes
      Creates submission file
-%) Submit the file to Kaggle.
+6) Submit the file to Kaggle.
